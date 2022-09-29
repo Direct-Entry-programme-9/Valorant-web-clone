@@ -84,7 +84,7 @@ header > .col:last-child div{
     font-weight: bold;
     vertical-align: auto;
     cursor: pointer;
-    /* transition: background 50ms; */
+    /* transiti on: background 50ms; */
 }
 
 #btn-playNow:hover{
