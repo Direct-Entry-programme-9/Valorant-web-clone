@@ -1,0 +1,17 @@
+*{
+    font-family: "FF Mark W05";
+}
+
+h1{
+    font-family: "Tungsten-Bold";
+    font-size: 7.5rem;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: "DINNextW05-Medium";
+}
+
+p{
+    font-family: "DINNextW1G";
+    line-height: 1.5rem;
+}

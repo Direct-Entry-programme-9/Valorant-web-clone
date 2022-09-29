@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(font.css);
+@import url(typography.css);
 
 *{
     box-sizing: border-box;
@@ -13,5 +14,79 @@
     display: block;
     content: "";
     clear: both;
+}
 
+/* Header and Footer layouts should be define in the style.css file */
+
+/* Layouts */
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header >.col{
+    height: 78px;
+}
+
+header .col:first-child{
+    width: 169px;
+    background-color: red;
+    float: left;
+}
+
+header > .col:nth-child(2){
+    width: calc(100% - 169px - 188px);
+    background-color: green;
+    float: left;
+}
+
+header > .col:last-child{
+    width: 188px;
+    float: right;
+    padding-right: 32px;
+    padding-top: 22px;
+    background-color: #111;
+    text-align: right;
+}
+
+header > .col:last-child div{
+    display: inline-block;
+}
+
+#ico-world{
+    width: 32px;    
+    height: 32px;
+    margin-right: 6px;
+    text-align: center;
+    border-radius: 6.4px;
+}
+
+#ico-world:hover{
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+#ico-world ion-icon{
+    color: white;
+    padding-top: 5px;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+#btn-playNow {
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 13px;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    font-family: "FF Mark W05";
+    font-weight: bold;
+    vertical-align: auto;
+    cursor: pointer;
+    /* transition: background 50ms; */
+}
+
+#btn-playNow:hover{
+    background: rgb(255, 70, 85);
 }
