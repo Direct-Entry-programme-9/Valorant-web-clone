@@ -39,7 +39,7 @@ header .col:first-child{
 
 header > .col:nth-child(2){
     width: calc(100% - 169px - 188px);
-    background-color: green;
+    background-color: #111;
     float: left;
 }
 
@@ -84,9 +84,55 @@ header > .col:last-child div{
     font-weight: bold;
     vertical-align: auto;
     cursor: pointer;
-    /* transiti on: background 50ms; */
 }
 
 #btn-playNow:hover{
     background: rgb(255, 70, 85);
+}
+
+header > .col:nth-child(2)>nav {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 18px 0;
+}
+
+header > .col:nth-child(2)>nav>li>nav {
+    display: none;
+}
+
+header > .col:nth-child(2)>nav>li {
+    padding: 7.5px 16px;
+    margin-right: 4px;
+    display: inline-block;
+    color: #f9f9f9;
+    font-size: 0.9rem;  
+    font-family: "FF Mark W05";
+    font-weight: bold;
+    border-radius: 7px;
+    letter-spacing: .08rem;
+}
+
+#nav-main li:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+#nav-main .submenu svg path{
+    padding-left: 5px;
+}
+
+#nav-main .submenu:hover svg path{
+    fill: white;
+}
+
+header > .col:nth-child(2)>nav>li:hover:after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: red;
+    /* border: 3px solid red; */
+    transform: translateY(20px);
 }
